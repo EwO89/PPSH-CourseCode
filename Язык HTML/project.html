@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>personal page</title>
+    <style> 
+      .header { 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2%;
+      }
+
+      .header h2 {
+        margin: 0;
+        color:white;
+        font-size:xx-large;
+      }
+      .header a {
+        color:beige;
+        margin-left: 10px;
+        text-decoration: none;
+        font-size: larger;
+      }
+
+      .main {
+        font-size: 20px;
+        color:white;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .project {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        color:white;
+      }
+
+      .project img {
+        padding: 50px;
+      }
+
+      .project-info {
+        margin-left: 50px;
+      }
+
+      .project-title {
+        font-size: 36px;
+        color:blanchedalmond;
+      }
+
+      .project-description {
+        font-size: 24px;
+      }
+
+      footer {
+        padding: 10px;
+      }
+
+      footer h3 {
+        text-align: center;
+        color: #fff;
+        font-size: 24px;
+      }
+
+      footer p {
+        text-align: center;
+        margin: 10px 0;
+      }
+
+      footer a {
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body background="backgroud.jpg" font-family="Lato"> <!-- Зададим фон и шрифт на всей странице -->
+    <div class="header"> <!-- Шапка сайта -->
+      <h2> <a href="main.html">ИМЯ ФАМИЛИЯ </a></h2>
+      <a href="exp.html">ОПЫТ РАБОТЫ</a>
+      <a href="career.html">КАРЬЕРНОЕ РАЗВИТИЕ</a>
+      <a href="project.html">ГОТОВЫЕ ПРОЕКТЫ</a>
+    </div>
+
+    <!-- Тут легче сделать несколько контейнеров, нежели табличкой-->
+    <!-- Также в коде все нагляднее -->
+    <!-- Очень советую посмотреть, что за css свойства тут используются. Пригодится.  -->
+  
+    <div class="main"> 
+      <h1>Готовые проекты</h1>
+    </div>
+
+    <div class="project">
+      <img src="vrf.jpg" width="300" height="200" alt="Фотография">
+      <div class="project-info">
+          <h2 class="project-title">Конкурентная структура данных</h2>
+          <h3 class="project-description">Рассмотрена реализация относительно нового подхода
+             к построению конкурентных структур данных – подход на временных метках. 
+             Рассматриваются возможности освобождения памяти и использования структуры данных 
+             на временных метках с неограниченным числом потоков.</h3>
+      </div>
+  </div>
+  <div class="project">
+      <div class="project-info">
+          <h2 class="project-title">Биометрическая аутентификация</h2>
+          <h3 class="project-description">Проверка подлинности на основе биометрических показателей. 
+            При биометрической аутентификации, секретными данными пользователя служит отпечаток пальца. 
+            Образ обеспечивает высокий уровень защиты доступа к информации.</h3>
+      </div>
+      <img src="vrf.jpg" width="300" height="200" alt="Фотография">
+  </div>
+  <div class="project">
+      <img src="vrf.jpg" width="300" height="200" alt="Фотография">
+      <div class="project-info">
+          <h2 class="project-title">Шифрование изображений с использованием алгоритма AES</h2>
+          <h3 class="project-description">Симметричный алгоритм блочного шифрования, который оперирует блоками по 128 бит. 
+            AES берет 128 бит исходного сообщения и превращает их с помощью некоего ключа в 128-битный шифротекст.</h3>
+      </div>
+  </div>
+  
+    <footer>
+      <h3>Контакты</h3>
+      <address>
+          <p><a href="tel:+7 (917) 372-89-23">Телефон: +7 (917) 372-89-23</a></p>
+          <p><a href="mailto:vlad@webref.ru">Email: hello@website.ru</a></p>
+      </address>
+  </footer>
+
+  </body>
+</html>
